@@ -1,4 +1,5 @@
-                                                   <b> User Authentication System </b>
+                                                  # User Authentication System
+
 Project Overview
 This project implements a basic User Authentication System that includes a Login Page and a Registration Page with password validation.
 
