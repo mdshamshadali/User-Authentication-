@@ -16,6 +16,7 @@ const Header = () => {
       .then((data) => {
         console.log(data, "userData");
         setData(data.users);
+        // console.log(data)
         setLoading(false);
       });
   }, []);
@@ -28,20 +29,6 @@ const Header = () => {
 
   return (
     <>
-      {/* <div>
-        <h1>User List</h1>
-        {loading ? (
-          <p>Loading...</p>
-        ) : data?.length > 0 ? (
-          <ul>
-            {data?.map((data) => (
-              <li key={data._id}>{data.name}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>No users found</p>
-        )}
-      </div> */}
       <Navbar expand="lg" bg="primary" variant="dark">
         <Container>
           <Navbar.Brand href="/">Home</Navbar.Brand>
